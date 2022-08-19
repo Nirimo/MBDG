@@ -1,3 +1,5 @@
-.env
+/node_modules/
 package-lock.json
-node_modules/
+package.json
+README.md
+.env
