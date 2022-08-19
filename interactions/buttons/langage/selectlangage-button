@@ -1,0 +1,71 @@
+const Discord = require("discord.js")
+const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
+module.exports = {
+    name: "langageselect",
+    async runInteraction(client, interaction, db, lang) {
+        let embedlangselection = new Discord.EmbedBuilder()
+            .setColor('#EB1807')
+            .setAuthor({ name: `🎞️ ${lang.configserver}`})
+            .setDescription(" ")
+            .setTimestamp()
+            .addFields({ 
+                name: `:flag_fr: Français`, 
+                value: `Choisir le Français pour la langue de votre serveur`, 
+                inline: false
+            },{
+                name: `:flag_gb: English`, 
+                value: `Choose English for your server language`, 
+                inline: false
+            },{
+                name: `:flag_es: Español`, 
+                value: `Elija el español como idioma del servidor`, 
+                inline: false
+            },{ 
+                name: `:flag_it: Italiano`, 
+                value: `Scegliere l'italiano come lingua del server`, 
+                inline: false
+            },{
+                name: `:flag_ru: Русский`, 
+                value: `Выберите русский язык для языка вашего сервера`, 
+                inline: false
+            })
+            .setFooter({ text: `${interaction.guildId}`});
+        const rowlangselect = new ActionRowBuilder()
+			.addComponents(
+				new ButtonBuilder()
+					.setCustomId('frenchselect')
+					.setLabel(`Français`)
+                    .setEmoji("1002893339315679343")
+					.setStyle(ButtonStyle.Primary),
+            )
+            .addComponents(
+				new ButtonBuilder()
+					.setCustomId('englishselect')
+					.setLabel(`English`)
+                    .setEmoji("1002894218160767076")
+					.setStyle(ButtonStyle.Primary),
+            )
+            .addComponents(
+				new ButtonBuilder()
+					.setCustomId('espagnolselect')
+					.setLabel(`Español`)
+                    .setEmoji("1002894216990556170")
+					.setStyle(ButtonStyle.Primary),
+            )
+            .addComponents(
+				new ButtonBuilder()
+					.setCustomId('italianoselect')
+					.setLabel(`Italiano`)
+                    .setEmoji("1002894219221934120")
+					.setStyle(ButtonStyle.Primary),
+            )
+            .addComponents(
+				new ButtonBuilder()
+					.setCustomId('russeselect')
+					.setLabel(`Русский`)
+                    .setEmoji("1002894220522176572")
+					.setStyle(ButtonStyle.Primary),
+            )
+        interaction.update({embeds: [embedlangselection], components: [rowlangselect]})
+    },
+};
