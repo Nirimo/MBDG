@@ -13,8 +13,8 @@ module.exports = {
             client.user.setActivity(activity, { type: ActivityType.Watching})
         }, 20000)
         console.log("Le bot est opérationnel sur " + client.guilds.cache.size+ " serveurs discord.");
-        // const devGuild = await client.guilds.cache.get("982923593707028480");
-        // devGuild.commands.set(client.commands.map(cmd => cmd));
-        client.application.commands.set(client.commands.map(cmd => cmd));
+        const devGuild = await client.guilds.cache.get("982923593707028480");
+        devGuild.commands.set(client.commands.map(cmd => cmd));
+        // client.application.commands.set(client.commands.map(cmd => cmd));
     }   
 }

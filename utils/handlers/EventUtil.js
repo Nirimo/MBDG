@@ -3,11 +3,11 @@ const { glob } = require("glob");
 const pGlob = promisify(glob);
 
 module.exports = async client => {
-
+    var i = 0;
     (await pGlob(`${process.cwd()}/events/*/*`.replaceAll("\\", "/"))).map(async (eventFile) => {
         const event = require(eventFile)
         if(!eventList.includes(event.name) || !(event.name)) {
-            return console.log(`  ${eventFile}  ✗`)
+            return console.log("\x1b[36m%s\x1b[0m",`╬`,"\x1b[31m", `  ${eventFile}  ✗`), i++;
         }
         if(event.once){
             client.once(event.name, (...args) => event.execute(client, ...args))
@@ -16,6 +16,7 @@ module.exports = async client => {
         }
         console.log("\x1b[36m%s\x1b[0m",`╬`,`  ${event.name} `,"\x1b[32m",` √   `);
     })
+    console.log("\x1b[36m%s\x1b[0m",`╬ `,"\x1b[33m", `${i} Evenements non chargées`)
     console.log("\x1b[36m%s\x1b[0m","╬============Buttons=============");
 }
 

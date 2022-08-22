@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const Database = require("../../utils/database/Database");
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 const { codeBlock } = require("@discordjs/builders");
 module.exports = {
@@ -8,7 +7,7 @@ module.exports = {
     runSlash: (client, interaction, db, lang) => {
         let embedmodules = new Discord.EmbedBuilder()
                 .setColor('#EB203C')
-                .setAuthor({ name: `${client.lang.listofmodule}`})
+                .setAuthor({ name: `${lang.listofmodule}`})
                 .setDescription(` `)
                 .addFields(
                     {

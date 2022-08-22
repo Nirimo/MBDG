@@ -36,5 +36,10 @@
     "music": "Musique",
     "musicdesc": "La musique est un divertissement important pour les salons vocaux de votre serveur",
     "desc": "Description",
-    "status": "status"
+    "status": "status",
+    "lockinfochannel": "Ce cannal à été bloquer par les membres du Staff, Seulement eux peuvent le réouvrir",
+    "desaclocked": "Réouvrir le cannal",
+    "lockinfochannelname": "Cannal Bloqué",
+    "delockinfochannel": "Ce cannal à été réouvert par les membres du Staff, Bonne discussion à vous",
+    "delockinfochannelname": "Cannal Réouvert"
 }
