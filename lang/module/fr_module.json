@@ -1,0 +1,62 @@
+{    
+    "Logs":{
+        "titre": "Logs",
+        "desc": "Les logs permettent d'enregistrer dans un canal toutes les actions faites par un utilisateur (suppression message, ...)",
+        "emoji": "1008791559237541918"
+        },
+    "Tickets":{
+        "titre": "Tickets",
+        "desc": "Le système de ticket est essentiel pour avoir une discussion privée avec un utilisateur et le staff(report member, order a service, ...)",
+        "emoji": "1008789787945226301"
+        },
+    "Musique":{
+        "titre": "Musique",
+        "desc": "La musique est un divertissement important pour les salons vocaux de votre serveur",
+        "emoji": "1012142992515141652"
+    },
+    "Welcome":{
+        "titre": "Bienvenue",
+        "desc": "La musique est un divertissement important pour les salons vocaux de votre serveur",
+        "emoji": "1012143144311205981"
+    },
+    "Autorole":{
+        "titre": "Autorole",
+        "desc": "La musique est un divertissement important pour les salons vocaux de votre serveur",
+        "emoji": "1012146012376285184"
+    },
+    "StatsGame":{
+        "titre": "Sats de Jeux",
+        "desc": "La musique est un divertissement important pour les salons vocaux de votre serveur",
+        "emoji": "1012143749893201960"
+    },
+    "freeepicgame":{
+        "titre": "Jeux Gratuits",
+        "desc": "La musique est un divertissement important pour les salons vocaux de votre serveur",
+        "emoji": "1012144267365462096"
+    },
+    "Experience":{
+        "titre": "Experience",
+        "desc": "La musique est un divertissement important pour les salons vocaux de votre serveur",
+        "emoji": "1012144600305119274"
+    },
+    "Protection":{
+        "titre": "Protection",
+        "desc": "La musique est un divertissement important pour les salons vocaux de votre serveur",
+        "emoji": "1012144777870983219"
+    },
+    "Invitecheck":{
+        "titre": "Invitations",
+        "desc": "La musique est un divertissement important pour les salons vocaux de votre serveur",
+        "emoji": "1012144910150942821"
+    },
+    "Anti-Bot":{
+        "titre": "Anti-Bot",
+        "desc": "La musique est un divertissement important pour les salons vocaux de votre serveur",
+        "emoji": "1012144910150942821"
+    },
+    "Giveway":{
+        "titre": "Giveway",
+        "desc": "La musique est un divertissement important pour les salons vocaux de votre serveur",
+        "emoji": "1012144910150942821"
+    }
+}

@@ -1,9 +1,11 @@
 const Discord = require("discord.js");
-const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
+const { ActionRowBuilder, ButtonBuilder, ButtonStyle, PermissionsBitField } = require('discord.js');
 const { codeBlock } = require("@discordjs/builders");
 module.exports = {
     name: `lock`,
     description: `Fermer un cannal temporairement`,
+    ownerOnly: false,
+    permissions: [PermissionsBitField.Flags.Administrator],
     runSlash: (client, interaction, db, lang) => {
         let embedlockactived = new Discord.EmbedBuilder()
                 .setColor('#EB203C')

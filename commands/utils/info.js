@@ -17,6 +17,7 @@ module.exports = {
                     { name: `📌 Ping:`, value: `${client.ws.ping} ms`, inline: false },
                     { name: `🗂️ ${lang.numberserver}`, value: `${client.guilds.cache.size} ${lang.servers}`, inline: false },
                     { name: `🟧 ${lang.etatbot}`, value: `${lang.maintenance}`, inline: false },
+                    { name: `👔 ${lang.owner}`, value: `<@${process.env.IDOWNERBOT}>`, inline: false },
                 )
                 .setFooter({ text: `${interaction.guildId}`});
         interaction.reply({ embeds: [embedinfobot]})

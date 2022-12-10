@@ -1,11 +1,12 @@
 const Discord = require("discord.js")
-const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
+const { ActionRowBuilder, ButtonBuilder, ButtonStyle, PermissionsBitField } = require('discord.js');
 module.exports = {
     name: "langageselect",
+    permissions: [PermissionsBitField.Flags.Administrator],
     async runInteraction(client, interaction, db, lang) {
         let embedlangselection = new Discord.EmbedBuilder()
             .setColor('#EB1807')
-            .setAuthor({ name: `🎞️ ${lang.configserver}`})
+            .setAuthor({ name: `🎞️ ${lang.configserverlang}`})
             .setDescription(" ")
             .setTimestamp()
             .addFields({ 

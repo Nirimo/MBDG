@@ -6,13 +6,11 @@ const sendbuttonlistmodule = require("./../../functions/page/sendbuttonlist.js")
 const modulelist = require("./../../lang/module/fr_module.json")
 
 module.exports = {
-    name: `module`,
-    description: `List des modules de votre serveur discord`,
+    name: `list`,
+    description: `faire une list`,
     ownerOnly: false,
+    UserPerms: ["BanMembers"],
     runSlash: (client, interaction, db, lang, number, stats) => {
-        var maxValue= 5;
-        var startpage = number ? number : 1;
-        var nmboflist = Object.keys(modulelist).length
-        sendpage(client, interaction, db, lang, startpage, lang.listofmodule, sendbuttonlistmodule.sendbuttonforpage(lang, startpage, nmboflist, maxValue), maxValue, nmboflist, modulelist, true, stats ? false : true);
+        interaction.reply("salut");
     }
 };

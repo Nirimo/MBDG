@@ -15,7 +15,7 @@ module.exports = {
                 .setFooter({ text: interaction.guildId + ""});
             interaction.channel.send({embeds: [embedlockdesactivate]})
         } else {
-            interaction.reply({content: "Vous n'êtes pas autorisé à faire ceci !", ephemeral: true});
+            interaction.reply({content: `${lang.notperm}`, ephemeral: true});
         }
     },
 };
